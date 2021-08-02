@@ -1,0 +1,37 @@
+/* common */
+@font-face {
+    font-family: Quicksand; /* Имя шрифта */
+    src: url(../fonts/Quicksand-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+html, body {
+    margin: 0px;
+    font-family: Quicksand;
+}
+.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+/* header */
+.header {height: 80px;}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+}
+
+.nav .nav__item:not(:last-child) {
+    margin-right: 42px;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    color: #5E81FE;
+}
