@@ -1,7 +1,13 @@
 /* common */
 @font-face {
     font-family: Quicksand; /* Имя шрифта */
-    src: url(../fonts/Quicksand-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/Quicksand-Regular.ttf); /* Путь к файлу со шрифтом */;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Bold.ttf);
+    font-weight: bold;
 }
 @font-face {
     font-family: Roboto; /* Имя шрифта */
@@ -10,10 +16,12 @@
 html, body {
     margin: 0px;
     font-family: Quicksand;
+    font-weight: normal;
 }
 .container {
     width: 1200px;
     margin: 0px auto;
+    padding: 33px;
 }
 
 /* header */
@@ -23,8 +31,23 @@ html, body {
     display: flex;
     justify-content: space-between;
 }
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__picture .logo__item {
+    margin-right: 42px;
+}
+
 .nav {
     display: flex;
+    font-size: 12px;
 }
 
 .nav .nav__item:not(:last-child) {
@@ -34,4 +57,5 @@ html, body {
 .nav__item:hover {
     cursor: pointer;
     color: #5E81FE;
+    font-weight: bold;
 }
