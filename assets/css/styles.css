@@ -1,7 +1,7 @@
 /* common */
 @font-face {
-    font-family: Quicksand; /* Имя шрифта */
-    src: url(../fonts/Quicksand-Regular.ttf); /* Путь к файлу со шрифтом */;
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-Regular.ttf);
     font-weight: normal;
 }
 @font-face {
@@ -10,8 +10,8 @@
     font-weight: bold;
 }
 @font-face {
-    font-family: Roboto; /* Имя шрифта */
-    src: url(../fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 html, body {
     margin: 0px;
@@ -21,17 +21,26 @@ html, body {
 .container {
     width: 1200px;
     margin: 0px auto;
-    padding: 33px;
 }
 
+/* button */
+.btn {}
+
 /* header */
-.header {height: 80px;}
+.header {
+    display: flex;
+    height: 80px;
+    border-bottom-color: #D8E3FE;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
 
 .header .container {
     display: flex;
     justify-content: space-between;
 }
 
+/* header left */
 .header__left {
     display: flex;
     align-items: center;
@@ -39,6 +48,7 @@ html, body {
 
 .logo {
     display: flex;
+    margin-right: 72px;
 }
 
 .logo__picture .logo__item {
@@ -50,12 +60,58 @@ html, body {
     font-size: 12px;
 }
 
+a.nav__item {
+    color: #697CA6;
+    text-decoration: none;
+}
+
 .nav .nav__item:not(:last-child) {
     margin-right: 42px;
 }
 
-.nav__item:hover {
-    cursor: pointer;
+a.nav__item.nav-item--active {
     color: #5E81FE;
     font-weight: bold;
+}
+
+.nav__item:hover {
+    cursor: pointer;
+    color: #334A79;
+}
+
+/* header right */
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    margin-right: 42px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+/* .socials__item {
+    align-items: center;
+} */
+
+.socials__item:not(:last-child) {
+    margin-right: 32px;
+}
+
+button.btn.btn--primary {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #3A79FF;
+    font-size: 13px;
+    background-color: #D2E1FF;
+    border: none;
+    border-radius: 2px;
+    width: 112px;
+    height: 42px;
+}
+
+button.btn.btn--primary:hover {
+    cursor: pointer;
 }
