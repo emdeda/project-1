@@ -30,7 +30,7 @@ align-items
 #выравнивание по горизонтальной (главной) оси
 justify-content
 ```
-#### Выравнивание
+#### Брейкпоинты
 ```
 @media screen and (min-width: 576px) {} –  мобильная версия/infix sm
 @media screen and (min-width: 768px) {} – айпады/infix md
