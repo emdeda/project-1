@@ -74,6 +74,15 @@ html, body {
     cursor: pointer;
 }
 
+.btn.btn--play {
+    width: 52px;
+    height: 52px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+}
+
 /* header */
 .header {
     display: flex;
@@ -252,3 +261,38 @@ a.nav__item.nav-item--active {
     }
 }
 @media screen and (min-width: 1400px) {}
+
+/* hero */
+.hero {
+    background-image: url(../images/illustration.jpg);
+    background-size: cover;
+    padding: 90px 0 212px 0;
+    position: relative;
+}
+
+.hero__content {
+    width: 584px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.hero__navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.hero__navigation span {
+    width: 8px;
+    height: 8px;
+    display: block;
+    background-color: #D1D6E3;
+    border-radius: 50%;
+    border: 0px;
+}
+
+.hero__navigation span:not(:last-child) {
+    margin-right: 12px;
+}
