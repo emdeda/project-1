@@ -51,6 +51,12 @@ html, body {
     }
 }
 
+/* icons */
+.icon.icon--facebook {}
+.icon.icon--telegram {}
+.icon.icon--twitter {}
+.icon.icon--medium {}
+
 /* button */
 .btn.btn--primary {
     font-family: 'Quicksand';
@@ -176,6 +182,11 @@ a.nav__item.nav-item--active {
 .socials__item {
     display: flex;
     align-items: center;
+    color: #B6BAC7;
+}
+
+.socials__item:hover .icon {
+    color: #6188FF;
 }
 
 .socials__item:not(:last-child) {
